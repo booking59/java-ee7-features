@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+	<title>View Action example</title>
+	
+	<f:metadata>
+		<f:viewAction action="#{indexController.doAction}"/>
+	</f:metadata>	
+</h:head>
+
+<h:body>
+	<p>#{indexController.hello} !</p>
+	<p>View action is called in the INVOKE_APPLICATION_PHASE</p>
+</h:body>
+	  
+</html>
